@@ -13,9 +13,15 @@ using UnityEngine;
 //  + Resume moving once the monster has been defeated
 // - Deal elementally-modified damage upon input from a player
 public class Player : MonoBehaviour {
+    //Fields
 
-	// Use this for initialization
-	void Start () {
+    //Serialized Fields
+    [SerializeField]
+    private float damageAmount;
+    //Variables
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
