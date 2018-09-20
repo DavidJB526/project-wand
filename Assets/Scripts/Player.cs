@@ -17,16 +17,26 @@ public class Player : MonoBehaviour {
 
     //Serialized Fields
     [SerializeField]
-    private float damageAmount;
+    private float baseDamageAmount;
+    [SerializeField]
+    private float damageModifier;
     //Variables
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
+
+    //Attacks when an enemy is in range
+    void Attack()
+    {
+
+    }
 }

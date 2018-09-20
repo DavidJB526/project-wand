@@ -7,13 +7,29 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
+    //Serialize Field
+    [SerializeField]
+    private Transform playerPosition;
+    [SerializeField]
+    private float xOffset;
+    private float yOffset;
+    //Fields
+    private Transform cameraPosition;
+
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        cameraPosition = this.GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
+
+    private void SetCameraAndOffset(float XOffset, float YOffset)
+    {
+
+    }
 }
