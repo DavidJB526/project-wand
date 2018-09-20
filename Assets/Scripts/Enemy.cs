@@ -9,4 +9,22 @@ public class Enemy : MonoBehaviour {
 
     enum Weakness { Fire, Plant, Water };
 
+    private void Update()
+    {
+        if (health <= 0)
+        {            
+            Destroy(gameObject);
+        }
+    }
+
+    private void TakeDamage(float amount)
+    {
+        Debug.Log(health);
+        health -= amount;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

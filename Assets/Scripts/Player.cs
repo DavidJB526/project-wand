@@ -17,26 +17,30 @@ public class Player : MonoBehaviour {
 
     //Serialized Fields
     [SerializeField]
-    private float baseDamageAmount;
+    private float baseDamageAmount, damageModifier, projectileSpeed;
+
     [SerializeField]
-    private float damageModifier;
+    private Rigidbody2D projectile;
+
     //Variables
 
     // Use this for initialization
-    void Start ()
+    private void Start ()
     {
 		
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	private void Update ()
     {
 		
 	}
 
     //Attacks when an enemy is in range
-    void Attack()
+    private void Attack()
     {
-
+        Rigidbody2D projectileClone;
+        projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
+        projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
     }
 }
