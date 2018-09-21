@@ -9,13 +9,8 @@ public class Enemy : MonoBehaviour {
 
     enum Weakness { Fire, Plant, Water };
 
-    private void Update()
-    {
-        if (health <= 0)
-        {            
-            Destroy(gameObject);
-        }
-    }
+    [SerializeField]
+    private Weakness enemyWeakness;
 
     private void TakeDamage(float amount)
     {

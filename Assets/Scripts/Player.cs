@@ -36,6 +36,7 @@ public class Player : MonoBehaviour {
 
     //Variables
     private bool enemyPresent;
+    private Enemy enemy;
 
     // Use this for initialization
     private void Start ()
@@ -48,6 +49,16 @@ public class Player : MonoBehaviour {
     {
         Walk();
 	}
+
+    private void OnTriggerEnter2D(Collider collider)
+    {
+        Debug.Log("Found Enemy");
+
+        if (collider.ComapreTag("Enemy"))
+        {
+            enemy = collider.transform.GetComponent<Enemy>;
+        }
+    }
 
     //Checks to see if there's a monster within range
     private void OnTriggerStay2D(Collider2D collision)
@@ -77,8 +88,13 @@ public class Player : MonoBehaviour {
     //Attacks when an enemy is in range
     private void Attack()
     {
-        Rigidbody2D projectileClone;
-        projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
-        projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
+        if (enemy != null)
+        {
+            Rigidbody2D projectileClone;
+            projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
+            projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
+            enemy.TakeDamage(baseDamageAmount);
+        }
+
     }
 }
