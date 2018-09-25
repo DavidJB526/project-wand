@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField]
     private Weakness enemyWeakness;
 
-    private void TakeDamage(float amount)
+    public void TakeDamage(float amount)
     {
         Debug.Log(health);
         health -= amount;

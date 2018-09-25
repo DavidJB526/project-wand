@@ -18,21 +18,23 @@ public class Player : MonoBehaviour {
     private Rigidbody2D playerRigidBody;
 
     //Serialized Fields
-    [SerializeField]
-<<<<<<< HEAD
-    private float baseDamageAmount, damageModifier, projectileSpeed;
-
-    [SerializeField]
-    private Rigidbody2D projectile;
-=======
-    private float playerAttackSpeed;
+    //[SerializeField]
+    //<<<<<<< HEAD
     [SerializeField]
     private float baseDamageAmount;
     [SerializeField]
     private float damageModifier;
     [SerializeField]
+    private float projectileSpeed;
+
+    [SerializeField]
+    private Rigidbody2D projectile;
+//=======
+    [SerializeField]
+    private float playerAttackSpeed;
+    [SerializeField]
     private float playerMovementSpeed;
->>>>>>> de251bbc82be02a177a8e530696988bc59ae3535
+//>>>>>>> de251bbc82be02a177a8e530696988bc59ae3535
 
     //Variables
     private bool enemyPresent;
@@ -54,9 +56,9 @@ public class Player : MonoBehaviour {
     {
         Debug.Log("Found Enemy");
 
-        if (collider.ComapreTag("Enemy"))
+        if (collider.CompareTag("Enemy"))
         {
-            enemy = collider.transform.GetComponent<Enemy>;
+            enemy = collider.transform.GetComponent<Enemy>();
         }
     }
 
@@ -93,7 +95,7 @@ public class Player : MonoBehaviour {
             Rigidbody2D projectileClone;
             projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
-            enemy.TakeDamage(baseDamageAmount);
+            enemy.TakeDamage(baseDamageAmount * damageModifier);
         }
 
     }
