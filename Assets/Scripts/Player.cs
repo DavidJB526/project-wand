@@ -36,6 +36,7 @@ public class Player : MonoBehaviour {
 
     //Variables
     private bool enemyPresent;
+    private Animator playerAnimator;
     private Enemy enemy;
     private float goldCount;
 
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour {
     private void Start ()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
         goldText.text = "";
 	}
 	
@@ -50,7 +52,6 @@ public class Player : MonoBehaviour {
 	private void FixedUpdate ()
     {
         Walk();
-        GoldCheck();
 	}
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -61,6 +62,7 @@ public class Player : MonoBehaviour {
         {
             enemy = collider.transform.GetComponent<Enemy>();
         }
+        playerAnimator.SetBool("enemyPresent", true);
     }
 
     //Checks to see if there's a monster within range
@@ -98,6 +100,7 @@ public class Player : MonoBehaviour {
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
             enemy.TakeDamage(baseDamageAmount * damageModifier);
             goldCount += enemy.goldAmount;
+            GoldCheck();
         }
 
     }
