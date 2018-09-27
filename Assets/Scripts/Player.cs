@@ -45,12 +45,17 @@ public class Player : MonoBehaviour {
         playerRigidBody = GetComponent<Rigidbody2D>();
         goldText.text = "";
 	}
-	
-	// Update is called once per frame
-	private void FixedUpdate ()
+
+    // Update is called once per frame
+    private void Update()
     {
         Walk();
-        GoldCheck();
+    }
+
+    //FixedUpdate is called once per physics calculation
+    private void FixedUpdate ()
+    {
+        //GoldCheck();
 	}
 
     private void OnTriggerEnter2D(Collider2D collider)
