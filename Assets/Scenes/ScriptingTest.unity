@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 505709584}
   - component: {fileID: 505709583}
   - component: {fileID: 505709582}
+  - component: {fileID: 505709585}
   m_Layer: 0
   m_Name: TempMonster
   m_TagString: Enemy
@@ -241,6 +242,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &505709585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505709581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd77af94ed6f4e4daeb6fba92cf66f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  goldAmount: 1
+  enemyWeakness: 0
 --- !u!1001 &604618255
 Prefab:
   m_ObjectHideFlags: 0
@@ -250,7 +265,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4936176707199046, guid: 601059d1be2d0f84cb8a24e3041e23d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.75
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4936176707199046, guid: 601059d1be2d0f84cb8a24e3041e23d3, type: 2}
       propertyPath: m_LocalPosition.y
@@ -262,15 +277,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4936176707199046, guid: 601059d1be2d0f84cb8a24e3041e23d3, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4936176707199046, guid: 601059d1be2d0f84cb8a24e3041e23d3, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4936176707199046, guid: 601059d1be2d0f84cb8a24e3041e23d3, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4936176707199046, guid: 601059d1be2d0f84cb8a24e3041e23d3, type: 2}
       propertyPath: m_LocalRotation.w

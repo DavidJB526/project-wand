@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1742445416336748}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.75, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -118,11 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d3fa83532daad4facd6e656e8e47a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamageAmount: 1
+  baseDamageAmount: 2
   damageModifier: 1
   projectileSpeed: 20
   playerAttackSpeed: 1
-  playerMovementSpeed: 10
+  playerMovementSpeed: 3
   projectile: {fileID: 50695000600386142, guid: 735ab62ce623fc548907e252f5ee83d1,
     type: 2}
   goldText: {fileID: 0}

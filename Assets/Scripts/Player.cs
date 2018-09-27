@@ -54,6 +54,7 @@ public class Player : MonoBehaviour {
         Walk();
 	}
 
+    //assign new enemy when it enters player range
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Found Enemy");
@@ -91,18 +92,22 @@ public class Player : MonoBehaviour {
     }
 
     //Attacks when an enemy is in range
-    private void Attack()
+    private void IdleAttack()
     {
         if (enemy != null)
         {
+            //creates magic missile projectile and fires it
             Rigidbody2D projectileClone;
             projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
+            //has enemy take damage on attack
             enemy.TakeDamage(baseDamageAmount * damageModifier);
+            //adds gold on attack           
             goldCount += enemy.goldAmount;
             GoldCheck();
         }
-
+        enemyPresent = false;
+        playerAnimator.SetBool("enemyPresent", false);
     }
 
     private void GoldCheck()
