@@ -79,7 +79,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  goldAmount: 0
+  goldAmount: 1
+  enemyWeakness: 0
 --- !u!212 &212703882478635138
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -5,7 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     [SerializeField]
-    float health, goldAmount;
+    float health;
+
+    public float goldAmount;
 
     enum Weakness { Fire, Plant, Water };
 
