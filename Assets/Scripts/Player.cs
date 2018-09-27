@@ -36,8 +36,8 @@ public class Player : MonoBehaviour {
 
     //Variables
     private bool enemyPresent;
-    private Animator playerAnimator;
     private Enemy enemy;
+    private Animator playerAnimator;
     private float goldCount;
 
     // Use this for initialization
@@ -47,12 +47,12 @@ public class Player : MonoBehaviour {
         playerAnimator = GetComponent<Animator>();
         goldText.text = "";
 	}
-	
-	// Update is called once per frame
-	private void FixedUpdate ()
+
+    //FixedUpdate is called once per physics calculation
+    private void FixedUpdate()
     {
         Walk();
-	}
+    }
 
     //assign new enemy when it enters player range
     private void OnTriggerEnter2D(Collider2D collider)
