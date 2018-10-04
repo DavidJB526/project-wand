@@ -34,6 +34,7 @@ public class Player : MonoBehaviour {
     private Text goldText;
 
     //Variables
+    [SerializeField]
     private bool enemyPresent;
     private Enemy enemy;
     private Animator playerAnimator;
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour {
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        goldText.text = "";
+        UpdateGoldText();
 	}
 
     //FixedUpdate is called once per physics calculation
@@ -62,7 +63,7 @@ public class Player : MonoBehaviour {
         {
             enemy = collider.transform.GetComponent<Enemy>();
         }
-        playerAnimator.SetBool("enemyPresent", true);
+        playerAnimator.SetBool("inCombat", true);
     }
 
     //Checks to see if there's a monster within range
@@ -109,7 +110,7 @@ public class Player : MonoBehaviour {
             UpdateGoldText();
         }
         enemyPresent = false;
-        playerAnimator.SetBool("enemyPresent", false);
+        playerAnimator.SetBool("inCombat", false);
     }
 
     //updates gold text UI
