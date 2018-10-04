@@ -19,9 +19,9 @@ public class Player : MonoBehaviour {
     private Rigidbody2D playerRigidBody;
 
     //Serialized Fields
-    //<<<<<<< HEAD
     [SerializeField]
-    private float baseDamageAmount,
+    private float 
+        baseDamageAmount,
         damageModifier,
         projectileSpeed,
         playerAttackSpeed,
@@ -32,7 +32,6 @@ public class Player : MonoBehaviour {
 
     [SerializeField]
     private Text goldText;
-//>>>>>>> de251bbc82be02a177a8e530696988bc59ae3535
 
     //Variables
     private bool enemyPresent;
@@ -100,17 +99,21 @@ public class Player : MonoBehaviour {
             Rigidbody2D projectileClone;
             projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
+
             //has enemy take damage on attack
             enemy.TakeDamage(baseDamageAmount * damageModifier);
-            //adds gold on attack           
+
+            //TODO: Add gold on enemy death, not player attack
+            //adds gold on attack
             goldCount += enemy.goldAmount;
-            GoldCheck();
+            UpdateGoldText();
         }
         enemyPresent = false;
         playerAnimator.SetBool("enemyPresent", false);
     }
 
-    private void GoldCheck()
+    //updates gold text UI
+    private void UpdateGoldText()
     {
         goldText.text = "Gold: " + goldCount.ToString();
     }
