@@ -13,7 +13,10 @@ using UnityEngine.UI;
 //      (forward trigger zone can be used for both this and to acquire the monster object for damage-dealing)
 //  + Resume moving once the monster has been defeated
 // - Deal elementally-modified damage upon input from a player
+
 public class Player : MonoBehaviour {
+
+    #region Variable References
 
     //Fields
     private Rigidbody2D playerRigidBody;
@@ -21,12 +24,13 @@ public class Player : MonoBehaviour {
     //Serialized Fields
     [SerializeField]
     private float 
-        baseDamageAmount,
-        damageModifier,
-        projectileSpeed,
-        playerAttackSpeed,
-        playerMovementSpeed;
+        baseDamageAmount, //simple idle attack damage
+        damageModifier, //multiplicative modifier to idle attack
+        projectileSpeed, //TODO: Remove projectile-based modal artifacts
+        playerAttackSpeed, //time between idle attacks
+        playerMovementSpeed; //horizontal movement speed
 
+    //Serialized object references
     [SerializeField]
     private Rigidbody2D projectile;
 
@@ -34,11 +38,15 @@ public class Player : MonoBehaviour {
     private Text goldText;
 
     //Variables
-    [SerializeField]
     private bool enemyPresent;
     private Enemy enemy;
     private Animator playerAnimator;
-    private float goldCount;
+
+    //TODO: Transform these into get and set fields rather than just a public variable. This is the hack functional way to do it
+    //public variables
+    public int goldCount;
+
+#endregion
 
     // Use this for initialization
     private void Start ()
@@ -57,19 +65,19 @@ public class Player : MonoBehaviour {
     //assign new enemy when it enters player range
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Found Enemy");
-
         if (collider.CompareTag("Enemy"))
         {
+            Debug.Log("Found Enemy");
             enemy = collider.transform.GetComponent<Enemy>();
+            enemyPresent = true;
+            StartCoroutine(IdleActiveCoroutine());
         }
-        playerAnimator.SetBool("inCombat", true);
+        //playerAnimator.SetBool("inCombat", true);
     }
 
     //Checks to see if there's a monster within range
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
         if (collision.CompareTag("Enemy"))
         {
             enemyPresent = true;
@@ -110,7 +118,7 @@ public class Player : MonoBehaviour {
             UpdateGoldText();
         }
         enemyPresent = false;
-        playerAnimator.SetBool("inCombat", false);
+        //playerAnimator.SetBool("inCombat", false);
     }
 
     //updates gold text UI
@@ -118,4 +126,18 @@ public class Player : MonoBehaviour {
     {
         goldText.text = "Gold: " + goldCount.ToString();
     }
+
+    #region Coroutines
+
+    //Idle Attack speed/damage Coroutine
+    private IEnumerator IdleActiveCoroutine()
+    {
+        while (enemyPresent)
+        {
+            Debug.Log("Started Attack Coroutine");
+            IdleAttack();
+            yield return new WaitForSeconds(playerAttackSpeed);
+        }
+    }
+    #endregion
 }
