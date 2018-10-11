@@ -71,8 +71,8 @@ public class Player : MonoBehaviour {
             enemy = collider.transform.GetComponent<Enemy>();
             enemyPresent = true;
             StartCoroutine(IdleActiveCoroutine());
+            //playerAnimator.SetBool("inCombat", true);
         }
-        //playerAnimator.SetBool("inCombat", true);
     }
 
     //Checks to see if there's a monster within range
@@ -83,8 +83,6 @@ public class Player : MonoBehaviour {
             enemyPresent = true;
         }
     }
-
-    //If the monster disappears, resets whether an enemy is present
 
     //Walks if unobstructed, stops if obstructed
     private void Walk()
@@ -110,13 +108,17 @@ public class Player : MonoBehaviour {
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
 
             //has enemy take damage on attack
-            enemy.TakeDamage(baseDamageAmount * damageModifier);
+            enemy.health -= (baseDamageAmount * damageModifier);
 
-            //TODO: Add gold on enemy death, not player attack
-            //adds gold on attack
-            goldCount += enemy.goldAmount;
-            UpdateGoldText();
+            //if the enemy no long has health, it drops gold and is destroyed
+            if (enemy.health <= 0)
+            {
+                goldCount += enemy.goldAmount;
+                UpdateGoldText();
+                Destroy(enemy.gameObject);
+            }
         }
+        //reset enemy present so that the loop will stop if the enemy is dead
         enemyPresent = false;
         //playerAnimator.SetBool("inCombat", false);
     }

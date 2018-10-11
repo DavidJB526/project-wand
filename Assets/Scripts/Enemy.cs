@@ -5,18 +5,17 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     [SerializeField]
-    float health;
+    public float health;
 
     public int goldAmount;
 
-    enum Weakness { Fire, Plant, Water };
+    enum Weakness { Fire, Plant, Water, None };
 
     [SerializeField]
-    private Weakness enemyWeakness;
+    Weakness enemyWeakness;
 
     public void TakeDamage(float amount)
     {
-        Debug.Log(health);
         health -= amount;
         if (health <= 0)
         {
