@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.5, y: 0}
+  m_Offset: {x: 2, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -123,7 +123,7 @@ MonoBehaviour:
   projectileSpeed: 20
   playerAttackSpeed: 1
   elementalBaseDamage: 15
-  elementalMultiplier: 2
+  elementalMultiplier: 3
   playerMovementSpeed: 1.5
   projectile: {fileID: 50695000600386142, guid: 735ab62ce623fc548907e252f5ee83d1,
     type: 2}

@@ -136,6 +136,7 @@ public class Player : MonoBehaviour {
     //Called from elemental attack button clicks, performs an elemental attack
     //TODO: Add Cooldowns and visual cues for the cooldowns to these attacks
 #region Active Button Attacks
+
     public void FireAttack()
     {
         if (enemy != null)
@@ -146,7 +147,7 @@ public class Player : MonoBehaviour {
             }
             else
             {
-                enemy.CurrentHealth -= elementalBaseDamage * elementalMultiplier;
+                enemy.CurrentHealth -= elementalBaseDamage;
             }
 
             CheckForDeathAndReset();
@@ -163,7 +164,7 @@ public class Player : MonoBehaviour {
             }
             else
             {
-                enemy.CurrentHealth -= elementalBaseDamage * elementalMultiplier;
+                enemy.CurrentHealth -= elementalBaseDamage;
             }
 
             CheckForDeathAndReset();
@@ -180,7 +181,7 @@ public class Player : MonoBehaviour {
             }
             else
             {
-                enemy.CurrentHealth -= elementalBaseDamage * elementalMultiplier;
+                enemy.CurrentHealth -= elementalBaseDamage;
             }
 
             CheckForDeathAndReset();

@@ -29,12 +29,13 @@ public class Enemy : MonoBehaviour {
     public Weakness enemyWeakness;
 
     //components
+    [SerializeField]
     private Slider healthSlider;
+
     //methods
     private void Start()
     {
         CurrentHealth = MaxHealth;
-        healthSlider = GetComponentInChildren<Slider>();
     }
 
     //updates health bar whenever the enemy's health changes to reflect the change
