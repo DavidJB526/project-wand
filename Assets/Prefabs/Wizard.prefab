@@ -118,10 +118,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d3fa83532daad4facd6e656e8e47a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamageAmount: 2
-  damageModifier: 1
+  idleBaseDamage: 10
+  idleDamageModifier: 1
   projectileSpeed: 20
   playerAttackSpeed: 1
+  elementalBaseDamage: 15
+  elementalMultiplier: 2
   playerMovementSpeed: 1.5
   projectile: {fileID: 50695000600386142, guid: 735ab62ce623fc548907e252f5ee83d1,
     type: 2}

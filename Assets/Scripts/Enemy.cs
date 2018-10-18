@@ -9,10 +9,10 @@ public class Enemy : MonoBehaviour {
 
     public int goldAmount;
 
-    enum Weakness { Fire, Plant, Water, None };
+    public enum Weakness { Fire, Plant, Water, None };
 
-    [SerializeField]
-    Weakness enemyWeakness;
+    //TODO: make this a field with get; and set;
+    public Weakness enemyWeakness;
 
     public void TakeDamage(float amount)
     {

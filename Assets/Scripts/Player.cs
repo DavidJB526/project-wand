@@ -24,10 +24,12 @@ public class Player : MonoBehaviour {
     //Serialized Fields
     [SerializeField]
     private float 
-        baseDamageAmount, //simple idle attack damage
-        damageModifier, //multiplicative modifier to idle attack
-        projectileSpeed, //TODO: Remove projectile-based modal artifacts
+        idleBaseDamage, //simple idle attack damage
+        idleDamageModifier, //multiplicative modifier to idle attack
+        projectileSpeed, //TODO: Remove projectile-based artifacts
         playerAttackSpeed, //time between idle attacks
+        elementalBaseDamage, //base damage for active elemental attacks
+        elementalMultiplier, //multiplicative bonus given for using the correct elemental attack
         playerMovementSpeed; //horizontal movement speed
 
     //Serialized object references
@@ -46,7 +48,10 @@ public class Player : MonoBehaviour {
     //public variables
     public int goldCount;
 
-#endregion
+    //enumerated variables
+    public enum Weakness { Fire, Plant, Water, None };
+
+    #endregion
 
     // Use this for initialization
     private void Start ()
@@ -75,7 +80,7 @@ public class Player : MonoBehaviour {
         }
     }
 
-    //Checks to see if there's a monster within range
+    //Checks to see if there's a monster within range and renews this per each frame the monster is within range
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
@@ -97,6 +102,19 @@ public class Player : MonoBehaviour {
         }
     }
 
+    //function to check whether the enemy is dead and drops gold, used within the attack functions
+    private void CheckForDeathAndReset()
+    {
+        if (enemy!=null && enemy.health <= 0)
+        {
+            goldCount += enemy.goldAmount;
+            UpdateGoldText();
+            Destroy(enemy.gameObject);
+        }
+
+        //reset enemy present so that the loop will stop if the enemy is dead
+        enemyPresent = false;
+    }
     //Attacks when an enemy is in range
     private void IdleAttack()
     {
@@ -108,20 +126,68 @@ public class Player : MonoBehaviour {
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
 
             //has enemy take damage on attack
-            enemy.health -= (baseDamageAmount * damageModifier);
+            enemy.health -= (idleBaseDamage * idleDamageModifier);
 
-            //if the enemy no long has health, it drops gold and is destroyed
-            if (enemy.health <= 0)
-            {
-                goldCount += enemy.goldAmount;
-                UpdateGoldText();
-                Destroy(enemy.gameObject);
-            }
+            CheckForDeathAndReset();
         }
-        //reset enemy present so that the loop will stop if the enemy is dead
-        enemyPresent = false;
         //playerAnimator.SetBool("inCombat", false);
     }
+
+    //Called from elemental attack button clicks, performs an elemental attack
+    //TODO: Add Cooldowns and visual cues for the cooldowns to these attacks
+#region Active Button Attacks
+    public void FireAttack()
+    {
+        if (enemy != null)
+        {
+            if (enemy.enemyWeakness == Enemy.Weakness.Fire)
+            {
+                enemy.health -= (elementalBaseDamage * elementalMultiplier);
+            }
+            else
+            {
+                enemy.health -= elementalBaseDamage * elementalMultiplier;
+            }
+
+            CheckForDeathAndReset();
+        }
+    }
+
+    public void WaterAttack()
+    {
+        if (enemy != null)
+        {
+            if (enemy.enemyWeakness == Enemy.Weakness.Water)
+            {
+                enemy.health -= (elementalBaseDamage * elementalMultiplier);
+            }
+            else
+            {
+                enemy.health -= elementalBaseDamage * elementalMultiplier;
+            }
+
+            CheckForDeathAndReset();
+        }
+    }
+
+    public void PlantAttack()
+    {
+        if (enemy != null)
+        {
+            if (enemy.enemyWeakness == Enemy.Weakness.Plant)
+            {
+                enemy.health -= (elementalBaseDamage * elementalMultiplier);
+            }
+            else
+            {
+                enemy.health -= elementalBaseDamage * elementalMultiplier;
+            }
+
+            CheckForDeathAndReset();
+        }
+    }
+
+    #endregion
 
     //updates gold text UI
     private void UpdateGoldText()
