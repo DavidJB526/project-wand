@@ -105,7 +105,7 @@ public class Player : MonoBehaviour {
     //function to check whether the enemy is dead and drops gold, used within the attack functions
     private void CheckForDeathAndReset()
     {
-        if (enemy!=null && enemy.health <= 0)
+        if (enemy!=null && enemy.CurrentHealth <= 0)
         {
             goldCount += enemy.goldAmount;
             UpdateGoldText();
@@ -126,7 +126,7 @@ public class Player : MonoBehaviour {
             projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
 
             //has enemy take damage on attack
-            enemy.health -= (idleBaseDamage * idleDamageModifier);
+            enemy.CurrentHealth -= (idleBaseDamage * idleDamageModifier);
 
             CheckForDeathAndReset();
         }
@@ -142,11 +142,11 @@ public class Player : MonoBehaviour {
         {
             if (enemy.enemyWeakness == Enemy.Weakness.Fire)
             {
-                enemy.health -= (elementalBaseDamage * elementalMultiplier);
+                enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
             }
             else
             {
-                enemy.health -= elementalBaseDamage * elementalMultiplier;
+                enemy.CurrentHealth -= elementalBaseDamage * elementalMultiplier;
             }
 
             CheckForDeathAndReset();
@@ -159,11 +159,11 @@ public class Player : MonoBehaviour {
         {
             if (enemy.enemyWeakness == Enemy.Weakness.Water)
             {
-                enemy.health -= (elementalBaseDamage * elementalMultiplier);
+                enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
             }
             else
             {
-                enemy.health -= elementalBaseDamage * elementalMultiplier;
+                enemy.CurrentHealth -= elementalBaseDamage * elementalMultiplier;
             }
 
             CheckForDeathAndReset();
@@ -176,11 +176,11 @@ public class Player : MonoBehaviour {
         {
             if (enemy.enemyWeakness == Enemy.Weakness.Plant)
             {
-                enemy.health -= (elementalBaseDamage * elementalMultiplier);
+                enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
             }
             else
             {
-                enemy.health -= elementalBaseDamage * elementalMultiplier;
+                enemy.CurrentHealth -= elementalBaseDamage * elementalMultiplier;
             }
 
             CheckForDeathAndReset();
