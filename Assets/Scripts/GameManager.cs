@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour {
     //Things the Game Manager should do:
     // - Keep track of Gold
     // - Keep track of Level
-    // - These things be done elsewhere? I'm not sure
 
 
 

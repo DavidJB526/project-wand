@@ -14,11 +14,14 @@ public class Enemy : MonoBehaviour {
         get { return currentHealth; }
         set
         {
+            float damageTaken = currentHealth - value;
+            launchDamageNumber(damageTaken);
             currentHealth = value;
             UpdateHealthBar();
         }
     }
 
+    [Header("Gameplay Variables")]
     [SerializeField]
     private float MaxHealth;
 
@@ -28,9 +31,30 @@ public class Enemy : MonoBehaviour {
     
     public Weakness enemyWeakness;
 
+    [Header("UI Variables")]
+    [SerializeField]
+    private Transform textParentCanvas;
+
+    [SerializeField]
+    private float textVelocity;
+
+    [SerializeField]
+    private float destructionTime;
+
+    [SerializeField]
+    private float textAngleRange;
+
+    [Header("Component Fields")]
+
     //components
     [SerializeField]
     private Slider healthSlider;
+
+    [SerializeField]
+    private Transform textSpawn;
+
+    [SerializeField]
+    private Text textPrefab;
 
     //methods
     private void Start()
@@ -43,5 +67,13 @@ public class Enemy : MonoBehaviour {
     {
         float healthRatio = currentHealth/ MaxHealth;
         healthSlider.value = healthRatio;
+    }
+
+    private void launchDamageNumber(float damageAmount)
+    {
+        var flyingText = Instantiate(textPrefab, textSpawn);
+        flyingText.text = damageAmount.ToString();
+        flyingText.GetComponent<Rigidbody2D>().velocity = new Vector2() * textVelocity;
+        Destroy(flyingText, destructionTime);
     }
 }

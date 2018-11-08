@@ -115,6 +115,7 @@ public class Player : MonoBehaviour {
         //reset enemy present so that the loop will stop if the enemy is dead
         enemyPresent = false;
     }
+
     //Attacks when an enemy is in range
     private void IdleAttack()
     {
