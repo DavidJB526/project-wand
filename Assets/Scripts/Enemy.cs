@@ -32,8 +32,18 @@ public class Enemy : MonoBehaviour {
     public Weakness enemyWeakness;
 
     [Header("UI Variables")]
+
     [SerializeField]
-    private Transform textParentCanvas;
+    private float minimumTextSize;
+
+    [SerializeField]
+    private float maximumTextSize;
+
+    [SerializeField]
+    private float lowerDamageThreshold;
+
+    [SerializeField]
+    private float upperDamageThreshold;
 
     [SerializeField]
     private float textVelocity;
@@ -42,7 +52,10 @@ public class Enemy : MonoBehaviour {
     private float destructionTime;
 
     [SerializeField]
-    private float textAngleRange;
+    private float textXNegativeDeviation;
+
+    [SerializeField]
+    private float textXPositiveDeviation;
 
     [Header("Component Fields")]
 
@@ -73,7 +86,7 @@ public class Enemy : MonoBehaviour {
     {
         var flyingText = Instantiate(textPrefab, textSpawn);
         flyingText.text = damageAmount.ToString();
-        flyingText.GetComponent<Rigidbody2D>().velocity = new Vector2() * textVelocity;
+        flyingText.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-textXNegativeDeviation, textXPositiveDeviation), textVelocity);
         Destroy(flyingText, destructionTime);
     }
 }

@@ -282,7 +282,14 @@ MonoBehaviour:
   MaxHealth: 75
   goldAmount: 15
   enemyWeakness: 2
+  textParentCanvas: {fileID: 0}
+  textVelocity: 0
+  destructionTime: 0
+  textXNegativeDeviation: 0
+  textXPositiveDeviation: 0
   healthSlider: {fileID: 114998937913772400}
+  textSpawn: {fileID: 0}
+  textPrefab: {fileID: 0}
 --- !u!114 &114467439645106042
 MonoBehaviour:
   m_ObjectHideFlags: 1

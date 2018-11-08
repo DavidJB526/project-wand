@@ -152,7 +152,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1815732536688476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.72, y: -1.2979969, z: 0}
+  m_LocalPosition: {x: 6.72, y: -0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224082693284090024}
@@ -242,9 +242,14 @@ MonoBehaviour:
   MaxHealth: 100
   goldAmount: 15
   enemyWeakness: 0
-  textParentCanvas: {fileID: 0}
+  minimumTextSize: 40
+  maximumTextSize: 75
+  lowerDamageThreshold: 5
+  upperDamageThreshold: 50
   textVelocity: 10
   destructionTime: 3
+  textXNegativeDeviation: 3
+  textXPositiveDeviation: 1.5
   healthSlider: {fileID: 114821948166990006}
   textSpawn: {fileID: 224404557619472122}
   textPrefab: {fileID: 114121215215289326, guid: b0a17a2a14b0dd349a0a510aadddaaa1,
@@ -504,7 +509,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1557851883543774}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

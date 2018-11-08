@@ -30,17 +30,16 @@ public class Player : MonoBehaviour {
         playerAttackSpeed, //time between idle attacks
         elementalBaseDamage, //base damage for active elemental attacks
         elementalMultiplier, //multiplicative bonus given for using the correct elemental attack
-        playerMovementSpeed; //horizontal movement speed
+        playerMovementSpeed, //horizontal movement speed
+        moveCreepWaitTime; //wait time for move creep (very short)
 
     //Serialized object references
-    [SerializeField]
-    private Rigidbody2D projectile;
-
     [SerializeField]
     private Text goldText;
 
     //Variables
     private bool enemyPresent;
+    private bool canWalk;
     private Enemy enemy;
     private Animator playerAnimator;
 
@@ -60,6 +59,10 @@ public class Player : MonoBehaviour {
         playerAnimator = GetComponent<Animator>();
         UpdateGoldText();
 	}
+    private void Update()
+    {
+        checkIfEnemyDestroyed();
+    }
 
     //FixedUpdate is called once per physics calculation
     private void FixedUpdate()
@@ -81,11 +84,20 @@ public class Player : MonoBehaviour {
     }
 
     //Checks to see if there's a monster within range and renews this per each frame the monster is within range
-    private void OnTriggerStay2D(Collider2D collision)
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Enemy"))
+    //    {
+    //        enemyPresent = true;
+    //    }
+    //}
+
+    //checks to see if the enemy has been destroyed
+    private void checkIfEnemyDestroyed()
     {
-        if (collision.CompareTag("Enemy"))
+        if (enemyPresent && !enemy)
         {
-            enemyPresent = true;
+            enemyPresent = false;
         }
     }
 
@@ -105,15 +117,13 @@ public class Player : MonoBehaviour {
     //function to check whether the enemy is dead and drops gold, used within the attack functions
     private void CheckForDeathAndReset()
     {
+        //checks to see if the enemy is there AND has no health left
         if (enemy!=null && enemy.CurrentHealth <= 0)
         {
-            goldCount += enemy.goldAmount;
-            UpdateGoldText();
-            Destroy(enemy.gameObject);
+            goldCount += enemy.goldAmount; //adds to the player's gold count from the enemy's drop amount
+            UpdateGoldText(); //updates the gold text
+            Destroy(enemy.gameObject); //destroys the monster
         }
-
-        //reset enemy present so that the loop will stop if the enemy is dead
-        enemyPresent = false;
     }
 
     //Attacks when an enemy is in range
@@ -121,14 +131,9 @@ public class Player : MonoBehaviour {
     {
         if (enemy != null)
         {
-            //creates magic missile projectile and fires it
-            Rigidbody2D projectileClone;
-            projectileClone = Instantiate(projectile, transform.position + transform.right, transform.rotation) as Rigidbody2D;
-            projectileClone.velocity = transform.TransformDirection(Vector2.right * projectileSpeed);
-
             //has enemy take damage on attack
             enemy.CurrentHealth -= (idleBaseDamage * idleDamageModifier);
-
+            //check to make sure the enemy is/is not dead
             CheckForDeathAndReset();
         }
         //playerAnimator.SetBool("inCombat", false);
@@ -136,7 +141,7 @@ public class Player : MonoBehaviour {
 
     //Called from elemental attack button clicks, performs an elemental attack
     //TODO: Add Cooldowns and visual cues for the cooldowns to these attacks
-#region Active Button Attacks
+    #region Active Button Attacks
 
     public void FireAttack()
     {
