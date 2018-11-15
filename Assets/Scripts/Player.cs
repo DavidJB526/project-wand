@@ -36,12 +36,15 @@ public class Player : MonoBehaviour {
     //Serialized object references
     [SerializeField]
     private Text goldText;
+    [SerializeField]
+    private AudioSource wizardWalking;
 
     //Variables
     private bool enemyPresent;
     private bool canWalk;
     private Enemy enemy;
     private Animator playerAnimator;
+    private bool isWalking = false;
 
     //TODO: Transform these into get and set fields rather than just a public variable. This is the hack functional way to do it
     //public variables
@@ -107,10 +110,22 @@ public class Player : MonoBehaviour {
         if (!enemyPresent)
         {
             playerRigidBody.velocity = new Vector2(playerMovementSpeed, 0);
+            if(isWalking == true)
+            {
+
+                wizardWalking.Play();
+                isWalking = false;
+            }
+            else
+            {
+
+            }
+            
         }
         else
         {
             playerRigidBody.velocity = new Vector2(0,0);
+           wizardWalking.Stop();
         }
     }
 
@@ -123,6 +138,7 @@ public class Player : MonoBehaviour {
             goldCount += enemy.goldAmount; //adds to the player's gold count from the enemy's drop amount
             UpdateGoldText(); //updates the gold text
             Destroy(enemy.gameObject); //destroys the monster
+            isWalking = true;
         }
     }
 
