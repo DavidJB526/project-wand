@@ -14,7 +14,8 @@ using UnityEngine.UI;
 //  + Resume moving once the monster has been defeated
 // - Deal elementally-modified damage upon input from a player
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
     #region Variable References
 
