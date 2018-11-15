@@ -67,6 +67,9 @@ public class Enemy : MonoBehaviour {
     private Transform textSpawn;
 
     [SerializeField]
+    private Canvas textCanvas;
+
+    [SerializeField]
     private Text textPrefab;
 
     //methods
@@ -82,11 +85,20 @@ public class Enemy : MonoBehaviour {
         healthSlider.value = healthRatio;
     }
 
+    //fires a text element
     private void launchDamageNumber(float damageAmount)
     {
         var flyingText = Instantiate(textPrefab, textSpawn);
         flyingText.text = damageAmount.ToString();
         flyingText.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-textXNegativeDeviation, textXPositiveDeviation), textVelocity);
         Destroy(flyingText, destructionTime);
+    }
+
+    //function called to destroy the monster
+    public void killEnemy()
+    {
+        textCanvas.transform.SetParent(null, true);
+        Destroy(textCanvas.gameObject, 2);
+        Destroy(this.gameObject);
     }
 }

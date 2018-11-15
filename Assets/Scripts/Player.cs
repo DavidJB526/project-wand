@@ -23,15 +23,14 @@ public class Player : MonoBehaviour {
 
     //Serialized Fields
     [SerializeField]
-    private float 
+    private float
         idleBaseDamage, //simple idle attack damage
         idleDamageModifier, //multiplicative modifier to idle attack
         projectileSpeed, //TODO: Remove projectile-based artifacts
         playerAttackSpeed, //time between idle attacks
         elementalBaseDamage, //base damage for active elemental attacks
         elementalMultiplier, //multiplicative bonus given for using the correct elemental attack
-        playerMovementSpeed, //horizontal movement speed
-        moveCreepWaitTime; //wait time for move creep (very short)
+        playerMovementSpeed; //horizontal movement speed
 
     //Serialized object references
     [SerializeField]
@@ -83,15 +82,6 @@ public class Player : MonoBehaviour {
         }
     }
 
-    //Checks to see if there's a monster within range and renews this per each frame the monster is within range
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Enemy"))
-    //    {
-    //        enemyPresent = true;
-    //    }
-    //}
-
     //checks to see if the enemy has been destroyed
     private void checkIfEnemyDestroyed()
     {
@@ -122,7 +112,7 @@ public class Player : MonoBehaviour {
         {
             goldCount += enemy.goldAmount; //adds to the player's gold count from the enemy's drop amount
             UpdateGoldText(); //updates the gold text
-            Destroy(enemy.gameObject); //destroys the monster
+            enemy.killEnemy(); //destroys the monster
         }
     }
 
@@ -140,7 +130,7 @@ public class Player : MonoBehaviour {
     }
 
     //Called from elemental attack button clicks, performs an elemental attack
-    //TODO: Add Cooldowns and visual cues for the cooldowns to these attacks
+    //TODO: Add Cooldowns and visual cues for such cooldowns to these attacks
     #region Active Button Attacks
 
     public void FireAttack()
