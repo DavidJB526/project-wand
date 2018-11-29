@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField]
     private float MaxHealth;
 
-    public int goldAmount;
+    public float goldAmount;
 
     public enum Weakness { Fire, Plant, Water, None };
     

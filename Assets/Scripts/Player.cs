@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D playerRigidBody;
 
     //Serialized Fields
+    //[Header("Player Variables")]
     [SerializeField]
     private float
         idleBaseDamage, //simple idle attack damage
@@ -33,9 +34,35 @@ public class Player : MonoBehaviour
         elementalMultiplier, //multiplicative bonus given for using the correct elemental attack
         playerMovementSpeed; //horizontal movement speed
 
+    //Store Variables
+    [Header("Store Variables")]
+    [SerializeField]
+    private float startingPrice; //starting cost of upgrades
+    [SerializeField]
+    private float priceIncreaseRatio; //the increase of the per-purchase cost of upgrades
+    [SerializeField]
+    private string attackButtonBaseText; //text that appears in front of the price on the attack store button
+    [SerializeField]
+    private string speedButtonBaseText; //text that appears in front of the price on the attack speed store button
+    [SerializeField]
+    private float attackIncrease; //how much the idle attack power increases per purchase
+    [SerializeField]
+    private float speedIncrease; //how much the idle attack speed decreases per purchase
+
+    private Text attackButtonText;
+    private Text speedButtonText;
+    private float attackCost;
+    private float speedCost;
+
+
     //Serialized object references
+    [Header("Object/Components")]
     [SerializeField]
     private Text goldText;
+    [SerializeField]
+    private Button AttackStoreButton;
+    [SerializeField]
+    private Button SpeedStoreButton;
 
     //Variables
     private bool enemyPresent;
@@ -45,7 +72,8 @@ public class Player : MonoBehaviour
 
     //TODO: Transform these into get and set fields rather than just a public variable. This is the hack functional way to do it
     //public variables
-    public int goldCount;
+    [HideInInspector]
+    public float goldCount;
 
     //enumerated variables
     public enum Weakness { Fire, Plant, Water, None };
@@ -58,10 +86,12 @@ public class Player : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
         UpdateGoldText();
+        setupStore();
 	}
     private void Update()
     {
         checkIfEnemyDestroyed();
+        updateStoreButtons();
     }
 
     //FixedUpdate is called once per physics calculation
@@ -69,6 +99,8 @@ public class Player : MonoBehaviour
     {
         Walk();
     }
+
+    #region Character Movement + Attacks
 
     //assign new enemy when it enters player range
     private void OnTriggerEnter2D(Collider2D collider)
@@ -83,7 +115,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    //checks to see if the enemy has been destroyed
+    //checks to see if the enemy has been destroyed each frame
+    // Essentially acts as an "On trigger exit" event function that includes when the enemy object is destroyed
     private void checkIfEnemyDestroyed()
     {
         if (enemyPresent && !enemy)
@@ -129,6 +162,82 @@ public class Player : MonoBehaviour
         }
         //playerAnimator.SetBool("inCombat", false);
     }
+
+    #endregion
+    
+    #region Store Functions
+    
+    //initializes store values
+    private void setupStore()
+    {
+        //get text components from buttons
+        attackButtonText =  AttackStoreButton.GetComponentInChildren<Text>();
+        speedButtonText = SpeedStoreButton.GetComponentInChildren<Text>();
+
+        //set starting prices
+        attackCost = startingPrice;
+        speedCost = startingPrice;
+
+        //set initial text
+        attackButtonText.text = attackButtonBaseText + attackCost + "g";
+        speedButtonText.text = speedButtonBaseText + speedCost + "g";
+    }
+
+    //if the player doesn't have enough gold to buy an upgrade, disables interaction on that button
+    private void updateStoreButtons()
+    {
+        //check for attack button
+        if (goldCount >= attackCost)
+        {
+            AttackStoreButton.interactable = true;
+        }
+        else
+        {
+            AttackStoreButton.interactable = false;
+        }
+
+        //check for speed button
+        if (goldCount >= speedCost)
+        {
+            SpeedStoreButton.interactable = true;
+        }
+        else
+        {
+            SpeedStoreButton.interactable = false;
+        }
+    }
+
+    //removes the requisite gold from the player's gold count, adjusts the stat, then increases the price of the upgrade and updates the button text
+    public void AtkStoreButtonClicked()
+    {
+        goldCount -= attackCost; //subtract the gold
+        attackCost = Mathf.Round(attackCost * priceIncreaseRatio); //increase the cost and round it to the nearest integer
+        attackButtonText.text = attackButtonBaseText + attackCost + "g"; //update the button text
+        idleBaseDamage += attackIncrease; //increase the player's idle attack
+
+        UpdateGoldText(); //update the gold count text
+    }
+
+    public void SpeedStoreButtonClicked()
+    {
+        goldCount -= speedCost; //subtract the gold
+        speedCost = Mathf.Round(speedCost * priceIncreaseRatio); //increase the cost
+        speedButtonText.text = speedButtonBaseText + speedCost + "g"; //update the button text
+        if (playerAttackSpeed > speedIncrease)
+        {
+            playerAttackSpeed -= speedIncrease;
+        }
+        else if (playerAttackSpeed == speedIncrease)
+        {
+            speedButtonText.text = "Maxed Out!";
+            SpeedStoreButton.interactable = false;
+        }
+
+        UpdateGoldText(); //update the gold count text
+    }
+
+    #endregion
+
 
     //Called from elemental attack button clicks, performs an elemental attack
     //TODO: Add Cooldowns and visual cues for such cooldowns to these attacks

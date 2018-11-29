@@ -221,7 +221,15 @@ MonoBehaviour:
   elementalBaseDamage: 15
   elementalMultiplier: 2
   playerMovementSpeed: 1.5
+  startingPrice: 5
+  priceIncreaseRatio: 1.25
+  attackButtonBaseText: 'Attack +1: '
+  speedButtonBaseText: 'Atk Speed +1: '
+  attackIncrease: 1
+  speedIncrease: 0.025
   goldText: {fileID: 0}
+  AttackStoreButton: {fileID: 0}
+  SpeedStoreButton: {fileID: 0}
   goldCount: 0
 --- !u!212 &212162153397354690
 SpriteRenderer:
