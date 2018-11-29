@@ -43,7 +43,9 @@ public class Player : MonoBehaviour {
         fireSound,
         waterSound,
         plantSound,
-        missileSound;
+        missileSound,
+        playerNormalSound,
+        playerStrongSound;
  
 
     //Variables
@@ -173,10 +175,13 @@ public class Player : MonoBehaviour {
             if (enemy.enemyWeakness == Enemy.Weakness.Fire)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
+                playerStrongSound.Play();
+
             }
             else
             {
                 enemy.CurrentHealth -= elementalBaseDamage;
+                playerNormalSound.Play();
             }
 
             CheckForDeathAndReset();
@@ -191,10 +196,12 @@ public class Player : MonoBehaviour {
             if (enemy.enemyWeakness == Enemy.Weakness.Water)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
+                playerStrongSound.Play();
             }
             else
             {
                 enemy.CurrentHealth -= elementalBaseDamage;
+                playerNormalSound.Play();
             }
 
             CheckForDeathAndReset();
@@ -209,10 +216,12 @@ public class Player : MonoBehaviour {
             if (enemy.enemyWeakness == Enemy.Weakness.Plant)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
+                playerStrongSound.Play();
             }
             else
             {
                 enemy.CurrentHealth -= elementalBaseDamage;
+                playerNormalSound.Play();
             }
 
             CheckForDeathAndReset();
