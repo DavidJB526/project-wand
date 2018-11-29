@@ -197,7 +197,7 @@ public class Player : MonoBehaviour
         }
 
         //check for speed button
-        if (goldCount >= speedCost)
+        if (goldCount >= speedCost && playerAttackSpeed != speedIncrease)
         {
             SpeedStoreButton.interactable = true;
         }
@@ -223,11 +223,11 @@ public class Player : MonoBehaviour
         goldCount -= speedCost; //subtract the gold
         speedCost = Mathf.Round(speedCost * priceIncreaseRatio); //increase the cost
         speedButtonText.text = speedButtonBaseText + speedCost + "g"; //update the button text
-        if (playerAttackSpeed > speedIncrease)
+        if (playerAttackSpeed >= speedIncrease)
         {
             playerAttackSpeed -= speedIncrease;
         }
-        else if (playerAttackSpeed == speedIncrease)
+        if (playerAttackSpeed == speedIncrease)
         {
             speedButtonText.text = "Maxed Out!";
             SpeedStoreButton.interactable = false;
