@@ -217,7 +217,7 @@ MonoBehaviour:
   idleBaseDamage: 2
   idleDamageModifier: 1
   projectileSpeed: 20
-  playerAttackSpeed: 0.05
+  playerAttackSpeed: 0.5
   elementalBaseDamage: 15
   elementalMultiplier: 2
   playerMovementSpeed: 1.5

@@ -227,10 +227,10 @@ public class Player : MonoBehaviour
         {
             playerAttackSpeed -= speedIncrease;
         }
+
         if (playerAttackSpeed == speedIncrease)
         {
             speedButtonText.text = "Maxed Out!";
-            SpeedStoreButton.interactable = false;
         }
 
         UpdateGoldText(); //update the gold count text
