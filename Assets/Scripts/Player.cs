@@ -36,8 +36,15 @@ public class Player : MonoBehaviour {
     //Serialized object references
     [SerializeField]
     private Text goldText;
+
     [SerializeField]
-    private AudioSource wizardWalking;
+    private AudioSource
+        wizardWalking,
+        fireSound,
+        waterSound,
+        plantSound,
+        missileSound;
+ 
 
     //Variables
     private bool enemyPresent;
@@ -173,6 +180,7 @@ public class Player : MonoBehaviour {
             }
 
             CheckForDeathAndReset();
+            fireSound.Play();
         }
     }
 
@@ -190,6 +198,7 @@ public class Player : MonoBehaviour {
             }
 
             CheckForDeathAndReset();
+            waterSound.Play();
         }
     }
 
@@ -207,6 +216,7 @@ public class Player : MonoBehaviour {
             }
 
             CheckForDeathAndReset();
+            plantSound.Play();
         }
     }
 
@@ -227,6 +237,7 @@ public class Player : MonoBehaviour {
         {
             Debug.Log("Started Attack Coroutine");
             IdleAttack();
+            missileSound.Play();
             yield return new WaitForSeconds(playerAttackSpeed);
         }
     }
