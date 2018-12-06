@@ -106,6 +106,13 @@ public class Enemy : MonoBehaviour {
     private void startSounds()
     {
         enemySound.Play();
-         
+        StartCoroutine(EnemySoundsCoroutine());
+
+    }
+
+    private IEnumerator EnemySoundsCoroutine()
+    {
+        yield return new WaitForSeconds(Random.Range(3.0f, 5.0f));
+        startSounds();
     }
 }
