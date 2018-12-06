@@ -32,6 +32,36 @@ TextureImporter:
     21300054: WizardGurlWalking_27
     21300056: WizardGurlWalking_28
     21300058: WizardGurlWalking_29
+    21300060: SS_WizardGurlWalking_0
+    21300062: SS_WizardGurlWalking_1
+    21300064: SS_WizardGurlWalking_2
+    21300066: SS_WizardGurlWalking_3
+    21300068: SS_WizardGurlWalking_4
+    21300070: SS_WizardGurlWalking_5
+    21300072: SS_WizardGurlWalking_6
+    21300074: SS_WizardGurlWalking_7
+    21300076: SS_WizardGurlWalking_8
+    21300078: SS_WizardGurlWalking_9
+    21300080: SS_WizardGurlWalking_10
+    21300082: SS_WizardGurlWalking_11
+    21300084: SS_WizardGurlWalking_12
+    21300086: SS_WizardGurlWalking_13
+    21300088: SS_WizardGurlWalking_14
+    21300090: SS_WizardGurlWalking_15
+    21300092: SS_WizardGurlWalking_16
+    21300094: SS_WizardGurlWalking_17
+    21300096: SS_WizardGurlWalking_18
+    21300098: SS_WizardGurlWalking_19
+    21300100: SS_WizardGurlWalking_20
+    21300102: SS_WizardGurlWalking_21
+    21300104: SS_WizardGurlWalking_22
+    21300106: SS_WizardGurlWalking_23
+    21300108: SS_WizardGurlWalking_24
+    21300110: SS_WizardGurlWalking_25
+    21300112: SS_WizardGurlWalking_26
+    21300114: SS_WizardGurlWalking_27
+    21300116: SS_WizardGurlWalking_28
+    21300118: SS_WizardGurlWalking_29
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -112,601 +142,601 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WizardGurlWalking_0
+      name: SS_WizardGurlWalking_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
+        y: 820
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44e5bb5dd2b375643ba212c23b87a7c8
+      spriteID: ed9e3d53b2f2d4c44a5da66d0bfb4b43
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_1
+      name: SS_WizardGurlWalking_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
+        x: 155
+        y: 820
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8487f017f58c1a14c9438cef2c263a9f
+      spriteID: c02ca527a68e49641b2e276a9b8e6db2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_2
+      name: SS_WizardGurlWalking_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
+        x: 310
+        y: 820
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d029c55730064a249a9742229ad025ae
+      spriteID: fc38a6ee61a4b094e8f6046197b6f489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_3
+      name: SS_WizardGurlWalking_3
       rect:
         serializedVersion: 2
-        x: 396
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
+        x: 465
+        y: 820
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c039ce4247b7214a9a002c8912dacc0
+      spriteID: abf3934599302ff4e84b319a37557732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_4
+      name: SS_WizardGurlWalking_4
       rect:
         serializedVersion: 2
-        x: 528
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
+        x: 620
+        y: 820
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a68c820f6bfa6c48989490c09f3f853
+      spriteID: fa15c2569b59ff74a8c1d91b494565a9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_5
+      name: SS_WizardGurlWalking_5
       rect:
         serializedVersion: 2
-        x: 660
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
+        x: 775
+        y: 820
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996f55df5827d7746a167ebc7433ba91
+      spriteID: 56289c081dd9d8a42bba9b3ae851c3ab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_6
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39920247ea2f1f446b579a32254cd3b4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_7
-      rect:
-        serializedVersion: 2
-        x: 924
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e5f854cb26e8ef4a934e5596b2be9d6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_8
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a302ca2a89cd70b40bd2b411726f3784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_9
-      rect:
-        serializedVersion: 2
-        x: 1188
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3c1ef729886be0419211f13bd61cb81
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_10
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7edb59bd56932f24cac65f2fed511772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_11
-      rect:
-        serializedVersion: 2
-        x: 1452
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16d5686df3efdc94f9d332df4285ee45
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_12
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 015945025e0671049a72a6a1dbf81972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_13
-      rect:
-        serializedVersion: 2
-        x: 1716
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dfa3c7e341e62249be97b4e70b39927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_14
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 809
-        width: 132
-        height: 215
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ec142e96e6532c4cbdda87547de99fd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WizardGurlWalking_15
+      name: SS_WizardGurlWalking_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        y: 616
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93df22dd800bac442bc3e7084759c205
+      spriteID: 7df30227406c7914f90e873adefe1b92
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_16
+      name: SS_WizardGurlWalking_7
       rect:
         serializedVersion: 2
-        x: 132
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 155
+        y: 616
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb5f9f1bf0310d4fa0d8a89f9ec7765
+      spriteID: 65b9af08c21e3f04d92db18dc42e8024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_17
+      name: SS_WizardGurlWalking_8
       rect:
         serializedVersion: 2
-        x: 264
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 310
+        y: 616
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17a89ff6ce09ce244b22cf7951548cd6
+      spriteID: b4b2de3bdbc698c4282365577da99280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_18
+      name: SS_WizardGurlWalking_9
       rect:
         serializedVersion: 2
-        x: 396
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 465
+        y: 616
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2810828e85680b6408ccf681ccc33c5b
+      spriteID: fbff2a4e22c63dd4db62dd2bb8d3f5e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_19
+      name: SS_WizardGurlWalking_10
       rect:
         serializedVersion: 2
-        x: 528
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 620
+        y: 616
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 422c396240695d44d8d6397f58ee0cd6
+      spriteID: 01f184f9585d12e49a48abbd832f9769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_20
+      name: SS_WizardGurlWalking_11
       rect:
         serializedVersion: 2
-        x: 660
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 775
+        y: 616
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9d30f1a349896c49a06c01be73b0bca
+      spriteID: daf086e696dc17f4cb2c1ea0e27d6ce6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_21
+      name: SS_WizardGurlWalking_12
       rect:
         serializedVersion: 2
-        x: 792
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 0
+        y: 412
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86a1fe37795926242aee0f2931aae432
+      spriteID: eed73b13d5840234cb2539cbe26aaf4d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_22
+      name: SS_WizardGurlWalking_13
       rect:
         serializedVersion: 2
-        x: 924
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 155
+        y: 412
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 689322b3576774b45962b4345f761ecf
+      spriteID: 6a9f1f5158012c44bacf1705f6837aee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_23
+      name: SS_WizardGurlWalking_14
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 310
+        y: 412
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ae78dd28d9360428d564cbaf84c742
+      spriteID: 46b1a95edb99f8d45a8920edf1a9a9a5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_24
+      name: SS_WizardGurlWalking_15
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 465
+        y: 412
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c193efaed8665c545baff4a984c6a030
+      spriteID: 300decb2b96aed84b9997e23968b4776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_25
+      name: SS_WizardGurlWalking_16
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 620
+        y: 412
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09a92ba58a523c54e8ed5264c0fd3bbe
+      spriteID: 79b55c691f89e9d47a03394a5e466eee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_26
+      name: SS_WizardGurlWalking_17
       rect:
         serializedVersion: 2
-        x: 1452
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 775
+        y: 412
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82e2ccb6474ae48489ce806bdfe94fed
+      spriteID: 7158d238784fe9a48b315017c0d5f2ad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_27
+      name: SS_WizardGurlWalking_18
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 0
+        y: 208
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43aea6c8f5118c84fa2917398a126da2
+      spriteID: 6274d6c9b06d63d4ba70571c11bacae4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_28
+      name: SS_WizardGurlWalking_19
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 155
+        y: 208
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8c3650026d2d8343902e563dfdd3626
+      spriteID: a7c902f07516ad1469433c71cf2ff1f1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardGurlWalking_29
+      name: SS_WizardGurlWalking_20
       rect:
         serializedVersion: 2
-        x: 1848
-        y: 594
-        width: 132
-        height: 215
-      alignment: 9
+        x: 310
+        y: 208
+        width: 155
+        height: 204
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 786844a1aab00fb4b881f1898adef0b1
+      spriteID: fe11ba0f298a7c34783c39fa976fa52e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_21
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 208
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e667706e69d21a443a3f0e587b3723ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 208
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bed3b15256d6c49994fb1434641c34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_23
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 208
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9abc495158edc84aabd95c445adc777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be660af0cfe7ba429e7e316198fdf3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_25
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 4
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff454c4869226af4a932d98fd365b27d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_26
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 4
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68efeb78adcbcbd41841f813fe6f752d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_27
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 4
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59060b18f18735349add1316087e38da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_28
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea141b39668989f4f9395b50e15b82b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlWalking_29
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 4
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bac3030b949df84e99c6ccc20dd848f
       vertices: []
       indices: 
       edges: []
