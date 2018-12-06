@@ -92,6 +92,7 @@ public class Player : MonoBehaviour
     {
         checkIfEnemyDestroyed();
         updateStoreButtons();
+        UpdateAnimatorVariables();
     }
 
     //FixedUpdate is called once per physics calculation
@@ -101,6 +102,11 @@ public class Player : MonoBehaviour
     }
 
     #region Character Movement + Attacks
+
+    private void UpdateAnimatorVariables()
+    {
+        playerAnimator.SetBool("inCombat", enemyPresent);
+    }
 
     //assign new enemy when it enters player range
     private void OnTriggerEnter2D(Collider2D collider)
