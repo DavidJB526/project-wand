@@ -1,0 +1,725 @@
+fileFormatVersion: 2
+guid: de642b1d86577a24ab77dd6644897b26
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WizardGirlLightAttack_0
+    21300002: WizardGirlLightAttack_1
+    21300004: WizardGirlLightAttack_2
+    21300006: WizardGirlLightAttack_3
+    21300008: WizardGirlLightAttack_4
+    21300010: WizardGirlLightAttack_5
+    21300012: WizardGirlLightAttack_6
+    21300014: WizardGirlLightAttack_7
+    21300016: WizardGirlLightAttack_8
+    21300018: WizardGirlLightAttack_9
+    21300020: WizardGirlLightAttack_10
+    21300022: WizardGirlLightAttack_11
+    21300024: WizardGirlLightAttack_12
+    21300026: WizardGirlLightAttack_13
+    21300028: WizardGirlLightAttack_14
+    21300030: WizardGirlLightAttack_15
+    21300032: WizardGirlLightAttack_16
+    21300034: WizardGirlLightAttack_17
+    21300036: WizardGirlLightAttack_18
+    21300038: WizardGirlLightAttack_19
+    21300040: WizardGirlLightAttack_20
+    21300042: WizardGirlLightAttack_21
+    21300044: WizardGirlLightAttack_22
+    21300046: WizardGirlLightAttack_23
+    21300048: WizardGirlLightAttack_24
+    21300050: WizardGirlLightAttack_25
+    21300052: WizardGirlLightAttack_26
+    21300054: WizardGirlLightAttack_27
+    21300056: WizardGirlLightAttack_28
+    21300058: WizardGirlLightAttack_29
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5467
+        width: 147
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6094b6cdc16ba45af98e9faa9cc2d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5278.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec405baafda7587489cd26399a80488b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5090.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87b2898e0aeea04f881232f74f468a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4902.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e55ad9d882a4fc4fb1d2c914c7dcdd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4714.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f45fc01599b44840a80a285d496d5a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4526.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e74bb4abce6b44587db510e41d2f0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4338.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adfbcd3ba3a3194d8392602f6a68cf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4150.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6876ca1eefc976c46b74d2aaeb4c85e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3962.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fe024b41277214f93c5a319216ab86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3774.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67596bcfbb731fe45af4baa6a0946b21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3586.5
+        width: 147
+        height: 188.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e31890325baff74ba158fe90e35c140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3398
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634b5f7a900e57e4ca34e43ff8456e89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3208
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778b6aa30d1127445b245c7658a3c793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3018
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9e1fbf5b6fe4e45954c867d0430267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2830
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c2243bb8b4746439c533d66c9c1c75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ad71f6734d3fc48b4ed0ea8eb5824b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2450
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b490f379c4f85484eaa9742e24a67bc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2261
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0019f23e199993a45ab9bc977fa26d19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2071
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea3576fd358b904180548bfd2dff38e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1884
+        width: 147
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c950ea772cf97419ec2503a3678ed9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1692
+        width: 147
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240f775a0b1f24940bab36e1e55cf71b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1504
+        width: 147
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eee8e269dedc8340b70ecd8b3ccf294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1316
+        width: 147
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51eb2bf31a1be04182454a09a8fc901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1126
+        width: 147
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b6044612817544c96edb00d9f39891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 147
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027817b2a20e5414f9d2e2418b862dc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 752
+        width: 147
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d891170d0057a64eb5a631186495eff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 565
+        width: 147
+        height: 186
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee6ed2709ca16147a13de5b8fa1c272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 147
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4598d2fed51dd445b0acc73c1544458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 147
+        height: 189
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f422c2ab753e054ca6572015ce2db31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardGirlLightAttack_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 147
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bac656ea1a215d409188d3da4b0881a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d1d3e46f9fca9294197c2780c207d494
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
