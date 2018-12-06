@@ -192,11 +192,11 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1517773929347816}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1d2275b6e98fd8e4c862e3e142c4abe3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -483,6 +483,8 @@ MonoBehaviour:
   textSpawn: {fileID: 224010351599785714}
   textPrefab: {fileID: 114121215215289326, guid: b0a17a2a14b0dd349a0a510aadddaaa1,
     type: 2}
+  enemySound: {fileID: 82241721903891380}
+  enemyDeathSouth: {fileID: 0}
 --- !u!212 &212762790632054882
 SpriteRenderer:
   m_ObjectHideFlags: 1

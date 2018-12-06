@@ -196,7 +196,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10161b3c5c0326943b1e20b090c594d4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -355,6 +355,8 @@ MonoBehaviour:
   textSpawn: {fileID: 224063900450827954}
   textPrefab: {fileID: 114121215215289326, guid: b0a17a2a14b0dd349a0a510aadddaaa1,
     type: 2}
+  enemySound: {fileID: 82227239712126704}
+  enemyDeathSouth: {fileID: 0}
 --- !u!114 &114414561296433594
 MonoBehaviour:
   m_ObjectHideFlags: 1

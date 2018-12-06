@@ -72,7 +72,9 @@ public class Enemy : MonoBehaviour {
     private Text textPrefab;
 
     [SerializeField]
-    private AudioSource enemySound;
+    private AudioSource
+        enemySound,
+        enemyDeathSouth;
 
     //methods
     private void Start()
@@ -92,9 +94,10 @@ public class Enemy : MonoBehaviour {
         var flyingText = Instantiate(textPrefab, textSpawn);
         flyingText.text = damageAmount.ToString();
         flyingText.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-textXNegativeDeviation, textXPositiveDeviation), textVelocity);
+        enemyDeathSouth.Play();
         Destroy(flyingText, destructionTime);
     }
-
+    //enemy starts making sounds upon entering screen
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Sound"))
@@ -102,7 +105,7 @@ public class Enemy : MonoBehaviour {
             startSounds();
         }
     }
-
+    //starts the couroutine of how often enemies make sound 
     private void startSounds()
     {
         enemySound.Play();
