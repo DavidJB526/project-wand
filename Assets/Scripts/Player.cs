@@ -186,24 +186,24 @@ public class Player : MonoBehaviour
     //if the player doesn't have enough gold to buy an upgrade, disables interaction on that button
     private void updateStoreButtons()
     {
-        //check for attack button
+        //check whether there's enough gold to use the attack button
         if (goldCount >= attackCost)
         {
-            AttackStoreButton.interactable = true;
+            AttackStoreButton.interactable = true; //button is interactable
         }
         else
         {
-            AttackStoreButton.interactable = false;
+            AttackStoreButton.interactable = false; //button is non-interactable
         }
 
-        //check for speed button
-        if (goldCount >= speedCost && playerAttackSpeed != speedIncrease)
+        //check whether there's enough gold to use the attack speed button
+        if (goldCount >= speedCost && playerAttackSpeed != speedIncrease) //enough gold & not at maximum attack speed
         {
-            SpeedStoreButton.interactable = true;
+            SpeedStoreButton.interactable = true; //button is interactable
         }
         else
         {
-            SpeedStoreButton.interactable = false;
+            SpeedStoreButton.interactable = false; //button is non-interactable
         }
     }
 

@@ -33,6 +33,6 @@ public class CameraController : MonoBehaviour {
     // Sets the camera position to the player position + the offset (defined in editor)
     private void SetCameraAndOffset(float XOffset, float YOffset)
     {
-        cameraPosition.position = new Vector3(playerPosition.position.x + XOffset, playerPosition.position.y + YOffset, cameraPosition.position.z);
+        cameraPosition.position = new Vector3(playerPosition.position.x + XOffset, cameraPosition.position.y, cameraPosition.position.z);
     }
 }
