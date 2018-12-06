@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour {
     //TODO: make all of these fields with get; and set; rather than just a public variable
     private float currentHealth;
 
+  
+
     [HideInInspector]
     public float CurrentHealth
     {
@@ -69,6 +71,9 @@ public class Enemy : MonoBehaviour {
     [SerializeField]
     private Text textPrefab;
 
+    [SerializeField]
+    private AudioSource enemySound;
+
     //methods
     private void Start()
     {
@@ -88,5 +93,19 @@ public class Enemy : MonoBehaviour {
         flyingText.text = damageAmount.ToString();
         flyingText.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-textXNegativeDeviation, textXPositiveDeviation), textVelocity);
         Destroy(flyingText, destructionTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Sound"))
+        {
+            startSounds();
+        }
+    }
+
+    private void startSounds()
+    {
+        enemySound.Play();
+         
     }
 }
