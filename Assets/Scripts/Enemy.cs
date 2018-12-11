@@ -71,6 +71,10 @@ public class Enemy : MonoBehaviour {
 
     [SerializeField]
     private Text textPrefab;
+    [SerializeField]
+    private AudioSource
+        EnemySound,
+        EnemyDeathSound;
 
     //methods
     private void Start()
@@ -97,8 +101,30 @@ public class Enemy : MonoBehaviour {
     //function called to destroy the monster
     public void killEnemy()
     {
+        EnemyDeathSound.Play();
         textCanvas.transform.SetParent(null, true);
         Destroy(textCanvas.gameObject, 2);
         Destroy(this.gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+            startSounds();
+            
+        
+    }
+
+    private void startSounds()
+    {
+        
+         EnemySound.Play();
+        StartCoroutine(EnemySoundsCoroutine());
+    }
+
+    private IEnumerator EnemySoundsCoroutine()
+    {
+        yield return new WaitForSeconds(Random.Range(3.0f, 6.0f));       
+        startSounds();
     }
 }

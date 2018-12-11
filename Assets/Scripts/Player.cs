@@ -64,11 +64,26 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Button SpeedStoreButton;
 
+    [SerializeField]
+    private AudioSource
+        wizardWalking,
+        fireSound,
+        plantSound,
+        waterSound,
+        missileSound,
+        playerMissileSound1,
+        playerMissileSound2,
+        playerMissileSound3,
+        playerButtonSpellSound;
+
+
     //Variables
     private bool enemyPresent;
     private bool canWalk;
+    private bool isWalking;
     private Enemy enemy;
     private Animator playerAnimator;
+    private int wizardNoiseChance = 1;
 
     //TODO: Transform these into get and set fields rather than just a public variable. This is the hack functional way to do it
     //public variables
@@ -137,10 +152,18 @@ public class Player : MonoBehaviour
         if (!enemyPresent)
         {
             playerRigidBody.velocity = new Vector2(playerMovementSpeed, 0);
+            if(isWalking == true)
+            {
+                wizardWalking.Play();
+                isWalking = false;
+            }
+
+
         }
         else
         {
             playerRigidBody.velocity = new Vector2(0,0);
+            wizardWalking.Stop();
         }
     }
 
@@ -153,6 +176,7 @@ public class Player : MonoBehaviour
             goldCount += enemy.goldAmount; //adds to the player's gold count from the enemy's drop amount
             UpdateGoldText(); //updates the gold text
             enemy.killEnemy(); //destroys the monster
+            isWalking = true;
         }
     }
 
@@ -253,6 +277,8 @@ public class Player : MonoBehaviour
     {
         if (enemy != null)
         {
+            playerButtonSpellSound.Play();
+            fireSound.Play();
             if (enemy.enemyWeakness == Enemy.Weakness.Fire)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
@@ -270,6 +296,8 @@ public class Player : MonoBehaviour
     {
         if (enemy != null)
         {
+            playerButtonSpellSound.Play();
+            waterSound.Play();
             if (enemy.enemyWeakness == Enemy.Weakness.Water)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
@@ -287,6 +315,8 @@ public class Player : MonoBehaviour
     {
         if (enemy != null)
         {
+            playerButtonSpellSound.Play();
+            plantSound.Play();
             if (enemy.enemyWeakness == Enemy.Weakness.Plant)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
@@ -308,6 +338,35 @@ public class Player : MonoBehaviour
         goldText.text = "Gold: " + goldCount.ToString();
     }
 
+    //determines wich missile sound is played
+    private void IdleSound()
+    {
+        if (wizardNoiseChance == 1)
+        {
+            playerMissileSound1.Play();
+            wizardNoiseChance++;
+
+        }
+        else if (wizardNoiseChance == 3)
+        {
+            playerMissileSound2.Play();
+            wizardNoiseChance++;
+        }
+        else if (wizardNoiseChance == 6)
+        {
+            playerMissileSound3.Play();
+            wizardNoiseChance++;
+        }
+        else if (wizardNoiseChance == 9)
+        {
+            wizardNoiseChance = 1;
+        }
+        else
+        {
+            wizardNoiseChance++;
+        }
+    }
+
     #region Coroutines
 
     //Idle Attack speed/damage Coroutine
@@ -316,7 +375,11 @@ public class Player : MonoBehaviour
         while (enemyPresent)
         {
             Debug.Log("Started Attack Coroutine");
+
+            IdleSound();
+            
             IdleAttack();
+            missileSound.Play();
             yield return new WaitForSeconds(playerAttackSpeed);
         }
     }
