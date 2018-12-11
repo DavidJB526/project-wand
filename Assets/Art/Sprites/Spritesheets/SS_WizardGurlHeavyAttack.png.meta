@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 5849067f42c14e04dbd50d3abbde1e7e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SS_WizardGurlHeavyAttack_0
+    21300002: SS_WizardGurlHeavyAttack_1
+    21300004: SS_WizardGurlHeavyAttack_2
+    21300006: SS_WizardGurlHeavyAttack_3
+    21300008: SS_WizardGurlHeavyAttack_4
+    21300010: SS_WizardGurlHeavyAttack_5
+    21300012: SS_WizardGurlHeavyAttack_6
+    21300014: SS_WizardGurlHeavyAttack_7
+    21300016: SS_WizardGurlHeavyAttack_8
+    21300018: SS_WizardGurlHeavyAttack_9
+    21300020: SS_WizardGurlHeavyAttack_10
+    21300022: SS_WizardGurlHeavyAttack_11
+    21300024: SS_WizardGurlHeavyAttack_12
+    21300026: SS_WizardGurlHeavyAttack_13
+    21300028: SS_WizardGurlHeavyAttack_14
+    21300030: SS_WizardGurlHeavyAttack_15
+    21300032: SS_WizardGurlHeavyAttack_16
+    21300034: SS_WizardGurlHeavyAttack_17
+    21300036: SS_WizardGurlHeavyAttack_18
+    21300038: SS_WizardGurlHeavyAttack_19
+    21300040: SS_WizardGurlHeavyAttack_20
+    21300042: SS_WizardGurlHeavyAttack_21
+    21300044: SS_WizardGurlHeavyAttack_22
+    21300046: SS_WizardGurlHeavyAttack_23
+    21300048: SS_WizardGurlHeavyAttack_24
+    21300050: SS_WizardGurlHeavyAttack_25
+    21300052: SS_WizardGurlHeavyAttack_26
+    21300054: SS_WizardGurlHeavyAttack_27
+    21300056: SS_WizardGurlHeavyAttack_28
+    21300058: SS_WizardGurlHeavyAttack_29
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -29,7 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -38,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -61,7 +91,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,7 +121,607 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc659a7d3fd88e34296a08707f1dbe49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb2929bff1d68445a1a5daa9fe57d00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765ad67f4d01c6447b2ab57d0f88cb7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313f854b78203024f8a05394815cdeac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_4
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795e36f0e7a7ab14e89d50193874d30d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_5
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedde3f6ba9ea3f43b98608fda82f0c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_6
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b917a32543155d64faca2ec6971da8ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_7
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e920a12c00032a428197d53e3c5545d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e7de9851c402b4d92f81f151fab668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3917645add114946a254a825d46320c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_10
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4765be23240feb74db8ce1782ea12654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_11
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee686b4ac23f0f44ad27928c733507b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_12
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 811
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62ba3a203e05a74cab4df12db4e1569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00ac2e8428cf7941ada933e9803a6da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df9007acd7ae5e4db84c3bfb5af7ee9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_15
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf0fba6928470341a081dd5df77659c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_16
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c06bee963b30f458b37b2ddabd7e64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_17
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020dac75bfb9f0c4484005a336d9d994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_18
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42811ae8388a2cf4eb4bd8ef6d421a1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_19
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a3d924734da1844ac40f47ed03c763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_20
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c07d4a6625cec04697456f2c612bbce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_21
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a101bc464bd5a449842035ba752512b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_22
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d7b1d408a9abc45bdcc54fd8d536f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_23
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a5ea99966af23469aec69026ffa16b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_24
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26524ad6f9af6a8459c3a6763d3291a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_25
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 598
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd23d293d9df3d47a7f51b3db40ac45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f750faacc214d0147b582ddee6841888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_27
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 385
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a3b93fd926a0b4da16df9ca29ffb0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_28
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 385
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a878541ee2b728741914883aae2bf787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SS_WizardGurlHeavyAttack_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 385
+        width: 151
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29e06cabb032d04382fc4028296a88f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
