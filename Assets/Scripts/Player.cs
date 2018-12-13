@@ -45,6 +45,10 @@ public class Player : MonoBehaviour
     [SerializeField]
     private string speedButtonBaseText; //text that appears in front of the price on the attack speed store button
     [SerializeField]
+    private string AttackStatusBaseText; //text for attack status
+    [SerializeField]
+    private string SpeedStatusBaseText; //text for speed status
+    [SerializeField]
     private float attackIncrease; //how much the idle attack power increases per purchase
     [SerializeField]
     private float speedIncrease; //how much the idle attack speed decreases per purchase
@@ -63,6 +67,10 @@ public class Player : MonoBehaviour
     private Button AttackStoreButton;
     [SerializeField]
     private Button SpeedStoreButton;
+    [SerializeField]
+    private Text CurrentAttackText;
+    [SerializeField]
+    private Text CurrentSpeedText;
 
     [SerializeField]
     private AudioSource
@@ -210,6 +218,9 @@ public class Player : MonoBehaviour
         //set initial text
         attackButtonText.text = attackButtonBaseText + attackCost + "g";
         speedButtonText.text = speedButtonBaseText + speedCost + "g";
+
+        CurrentAttackText.text = AttackStatusBaseText + idleBaseDamage;
+        CurrentSpeedText.text = SpeedStatusBaseText + playerAttackSpeed + "sec";
     }
 
     //if the player doesn't have enough gold to buy an upgrade, disables interaction on that button
@@ -243,7 +254,7 @@ public class Player : MonoBehaviour
         attackCost = Mathf.Round(attackCost * priceIncreaseRatio); //increase the cost and round it to the nearest integer
         attackButtonText.text = attackButtonBaseText + attackCost + "g"; //update the button text
         idleBaseDamage += attackIncrease; //increase the player's idle attack
-
+        CurrentAttackText.text = AttackStatusBaseText + idleBaseDamage; // update status text
         UpdateGoldText(); //update the gold count text
     }
 
@@ -257,11 +268,12 @@ public class Player : MonoBehaviour
             playerAttackSpeed -= speedIncrease;
         }
 
-        if (playerAttackSpeed == speedIncrease)
+        if (playerAttackSpeed <= speedIncrease)
         {
             speedButtonText.text = "Maxed Out!";
         }
 
+        CurrentSpeedText.text = SpeedStatusBaseText + playerAttackSpeed.ToString("F3") + "sec"; //update status text
         UpdateGoldText(); //update the gold count text
     }
 
