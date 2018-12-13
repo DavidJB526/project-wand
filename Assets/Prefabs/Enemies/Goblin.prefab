@@ -390,7 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 25
   goldAmount: 5
-  enemyWeakness: 0
+  enemyWeakness: 1
   minimumTextSize: 40
   maximumTextSize: 75
   lowerDamageThreshold: 5
