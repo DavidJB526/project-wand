@@ -157,8 +157,6 @@ public class Player : MonoBehaviour
                 wizardWalking.Play();
                 isWalking = false;
             }
-
-
         }
         else
         {
@@ -189,6 +187,7 @@ public class Player : MonoBehaviour
             enemy.CurrentHealth -= (idleBaseDamage * idleDamageModifier);
             //check to make sure the enemy is/is not dead
             CheckForDeathAndReset();
+
         }
         //playerAnimator.SetBool("inCombat", false);
     }
@@ -279,6 +278,7 @@ public class Player : MonoBehaviour
         {
             playerButtonSpellSound.Play();
             fireSound.Play();
+            AttackHeavily();
             if (enemy.enemyWeakness == Enemy.Weakness.Fire)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
@@ -298,6 +298,7 @@ public class Player : MonoBehaviour
         {
             playerButtonSpellSound.Play();
             waterSound.Play();
+            AttackHeavily();
             if (enemy.enemyWeakness == Enemy.Weakness.Water)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
@@ -317,6 +318,7 @@ public class Player : MonoBehaviour
         {
             playerButtonSpellSound.Play();
             plantSound.Play();
+            AttackHeavily();
             if (enemy.enemyWeakness == Enemy.Weakness.Plant)
             {
                 enemy.CurrentHealth -= (elementalBaseDamage * elementalMultiplier);
@@ -325,9 +327,13 @@ public class Player : MonoBehaviour
             {
                 enemy.CurrentHealth -= elementalBaseDamage;
             }
-
             CheckForDeathAndReset();
         }
+    }
+
+    public void AttackHeavily()
+    {
+        playerAnimator.SetTrigger("HvyAtk");
     }
 
     #endregion
@@ -345,7 +351,6 @@ public class Player : MonoBehaviour
         {
             playerMissileSound1.Play();
             wizardNoiseChance++;
-
         }
         else if (wizardNoiseChance == 3)
         {
