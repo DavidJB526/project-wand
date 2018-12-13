@@ -1,64 +1,69 @@
 fileFormatVersion: 2
-guid: de642b1d86577a24ab77dd6644897b26
+guid: 035a83dc361d9954ebea3bc7e52842db
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WizardGirlLightAttack_0
-    21300002: WizardGirlLightAttack_1
-    21300004: WizardGirlLightAttack_2
-    21300006: WizardGirlLightAttack_3
-    21300008: WizardGirlLightAttack_4
-    21300010: WizardGirlLightAttack_5
-    21300012: WizardGirlLightAttack_6
-    21300014: WizardGirlLightAttack_7
-    21300016: WizardGirlLightAttack_8
-    21300018: WizardGirlLightAttack_9
-    21300020: WizardGirlLightAttack_10
-    21300022: WizardGirlLightAttack_11
-    21300024: WizardGirlLightAttack_12
-    21300026: WizardGirlLightAttack_13
-    21300028: WizardGirlLightAttack_14
-    21300030: WizardGirlLightAttack_15
-    21300032: WizardGirlLightAttack_16
-    21300034: WizardGirlLightAttack_17
-    21300036: WizardGirlLightAttack_18
-    21300038: WizardGirlLightAttack_19
-    21300040: WizardGirlLightAttack_20
-    21300042: WizardGirlLightAttack_21
-    21300044: WizardGirlLightAttack_22
-    21300046: WizardGirlLightAttack_23
-    21300048: WizardGirlLightAttack_24
-    21300050: WizardGirlLightAttack_25
-    21300052: WizardGirlLightAttack_26
-    21300054: WizardGirlLightAttack_27
-    21300056: WizardGirlLightAttack_28
-    21300058: WizardGirlLightAttack_29
-    21300060: SS_WizardGurlLightAttack_0
-    21300062: SS_WizardGurlLightAttack_1
-    21300064: SS_WizardGurlLightAttack_2
-    21300066: SS_WizardGurlLightAttack_3
-    21300068: SS_WizardGurlLightAttack_4
-    21300070: SS_WizardGurlLightAttack_5
-    21300072: SS_WizardGurlLightAttack_6
-    21300074: SS_WizardGurlLightAttack_7
-    21300076: SS_WizardGurlLightAttack_8
-    21300078: SS_WizardGurlLightAttack_9
-    21300080: SS_WizardGurlLightAttack_10
-    21300082: SS_WizardGurlLightAttack_11
-    21300084: SS_WizardGurlLightAttack_12
-    21300086: SS_WizardGurlLightAttack_13
-    21300088: SS_WizardGurlLightAttack_14
-    21300090: SS_WizardGurlLightAttack_15
-    21300092: SS_WizardGurlLightAttack_16
-    21300094: SS_WizardGurlLightAttack_17
-    21300096: SS_WizardGurlLightAttack_18
-    21300098: SS_WizardGurlLightAttack_19
-    21300100: SS_WizardGurlLightAttack_20
-    21300102: SS_WizardGurlLightAttack_21
-    21300104: SS_WizardGurlLightAttack_22
-    21300106: SS_WizardGurlLightAttack_23
-    21300108: SS_WizardGurlLightAttack_24
-    21300110: SS_WizardGurlLightAttack_25
-    21300112: SS_WizardGurlLightAttack_26
+    21300000: Untitled-3_0
+    21300002: Untitled-3_1
+    21300004: Untitled-3_2
+    21300006: Untitled-3_3
+    21300008: Untitled-3_4
+    21300010: Untitled-3_5
+    21300012: Untitled-3_6
+    21300014: Untitled-3_7
+    21300016: Untitled-3_8
+    21300018: Untitled-3_9
+    21300020: Untitled-3_10
+    21300022: Untitled-3_11
+    21300024: Untitled-3_12
+    21300026: Untitled-3_13
+    21300028: Untitled-3_14
+    21300030: Untitled-3_15
+    21300032: Untitled-3_16
+    21300034: Untitled-3_17
+    21300036: Untitled-3_18
+    21300038: Untitled-3_19
+    21300040: Untitled-3_20
+    21300042: Untitled-3_21
+    21300044: Untitled-3_22
+    21300046: Untitled-3_23
+    21300048: Untitled-3_24
+    21300050: Untitled-3_25
+    21300052: Untitled-3_26
+    21300054: Untitled-3_27
+    21300056: Untitled-3_28
+    21300058: Untitled-3_29
+    21300060: Untitled-3_30
+    21300062: WizardLightAttack_0
+    21300064: WizardLightAttack_1
+    21300066: WizardLightAttack_2
+    21300068: WizardLightAttack_3
+    21300070: WizardLightAttack_4
+    21300072: WizardLightAttack_5
+    21300074: WizardLightAttack_6
+    21300076: WizardLightAttack_7
+    21300078: WizardLightAttack_8
+    21300080: WizardLightAttack_9
+    21300082: WizardLightAttack_10
+    21300084: WizardLightAttack_11
+    21300086: WizardLightAttack_12
+    21300088: WizardLightAttack_13
+    21300090: WizardLightAttack_14
+    21300092: WizardLightAttack_15
+    21300094: WizardLightAttack_16
+    21300096: WizardLightAttack_17
+    21300098: WizardLightAttack_18
+    21300100: WizardLightAttack_19
+    21300102: WizardLightAttack_20
+    21300104: WizardLightAttack_21
+    21300106: WizardLightAttack_22
+    21300108: WizardLightAttack_23
+    21300110: WizardLightAttack_24
+    21300112: WizardLightAttack_25
+    21300114: WizardLightAttack_26
+    21300116: WizardLightAttack_27
+    21300118: WizardLightAttack_28
+    21300120: WizardLightAttack_29
+    21300122: WizardLightAttack_30
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -102,7 +107,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -135,556 +140,605 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_0
+      name: WizardLightAttack_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5451
-        width: 147
-        height: 204
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0e9c2eaf2d44c44f95066e3c160d000
+      spriteID: 2345f8e72d8393c4aa5fc64418a14fdc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_1
+      name: WizardLightAttack_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5247
-        width: 147
-        height: 204
+        x: 137
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1406d110c9cf1464da572a6458b70d0d
+      spriteID: 56c5cd6df5d65e94abbef75fc3a9ad56
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_2
+      name: WizardLightAttack_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5043
-        width: 147
-        height: 204
+        x: 274
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad85529bcf0086e42872faee76127b68
+      spriteID: dcfd355f934d80e48a08bd2781beed81
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_3
+      name: WizardLightAttack_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4839
-        width: 147
-        height: 204
+        x: 411
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626f3d3f9252f6f40ba241506caad095
+      spriteID: ed489a068d6597f449e04e87e56c0602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_4
+      name: WizardLightAttack_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4635
-        width: 147
-        height: 204
+        x: 548
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bef89c4cf7516446b251493f848bf98
+      spriteID: 8f0161eb1588cb9419d1348516d616ee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_5
+      name: WizardLightAttack_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4431
-        width: 147
-        height: 204
+        x: 685
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c891825caebc16d41b31ff2153b690dc
+      spriteID: df8ce2b814539df4aabd2dbc0f2888c2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_6
+      name: WizardLightAttack_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4227
-        width: 147
-        height: 204
+        x: 822
+        y: 844
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75376bdcb7576b244aa4f3bfc5fcdc54
+      spriteID: 9181123d7eafe3249b990aeaea1a3000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_7
+      name: WizardLightAttack_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 4023
-        width: 147
-        height: 204
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12625cb21a8dedb4cb4546f2d8059735
+      spriteID: e4837604440fc554e872205856514c21
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_8
+      name: WizardLightAttack_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3819
-        width: 147
-        height: 204
+        x: 137
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c039ec73a6b6554abb36a12580f1913
+      spriteID: 9dbcd95c7e1ed464097d5cf8e0f578a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_9
+      name: WizardLightAttack_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3615
-        width: 147
-        height: 204
+        x: 274
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffdd02a0507d5ab44b402da7a8c774ec
+      spriteID: 65084dc3ab95f4d4598b83cc2a0f365e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_10
+      name: WizardLightAttack_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3411
-        width: 147
-        height: 204
+        x: 411
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7febb64b0eea07c40a1e50916f34564a
+      spriteID: 5e6dec728f4f2bd41ba2ed3fe4b6f659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_11
+      name: WizardLightAttack_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3207
-        width: 147
-        height: 204
+        x: 548
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73db293ba5a5a8e4c9851031c13c7df4
+      spriteID: f2e8cb65a79cfe34c8ac2857086646b0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_12
+      name: WizardLightAttack_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3003
-        width: 147
-        height: 204
+        x: 685
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c94d2de119131ae478943b2d2003c699
+      spriteID: c6ced11f2fe35fb4eaf6681ac4359b7a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_13
+      name: WizardLightAttack_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2799
-        width: 147
-        height: 204
+        x: 822
+        y: 663
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cf5f34fcfc5352499914c05aa2921a7
+      spriteID: b5e12cf54b302ef4c8a78ea87a1fe2ef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_14
+      name: WizardLightAttack_14
       rect:
         serializedVersion: 2
         x: 0
-        y: 2595
-        width: 147
-        height: 204
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80eba349b7dd6354891f3f305f0a7ff4
+      spriteID: 0e201d60e9e36874a802defbb1ea6ee7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_15
+      name: WizardLightAttack_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2391
-        width: 147
-        height: 204
+        x: 137
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a76e79a76d721948888f119629f33db
+      spriteID: e8a33b7896ed62d4786334b7af55e389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_16
+      name: WizardLightAttack_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2187
-        width: 147
-        height: 204
+        x: 274
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f1c71646d5f8340a45d9a0a69f3bb2
+      spriteID: a3935eb3a333e9a408f3e1ab39fdcdc3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_17
+      name: WizardLightAttack_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1983
-        width: 147
-        height: 204
+        x: 411
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37327cca8d7d2f842bf4e10c22437804
+      spriteID: c3dc005e6cffac6499f12dcb5e13dc17
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_18
+      name: WizardLightAttack_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1779
-        width: 147
-        height: 204
+        x: 548
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b829882342b076945aa1ca61291d94ed
+      spriteID: ff55fcdf23fdf6a47818ee7ace8cf880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_19
+      name: WizardLightAttack_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1575
-        width: 147
-        height: 204
+        x: 685
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f5727886d6d2046aa445ae700292cd
+      spriteID: 5f93dc20d827dc34bad4466daabe34a0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_20
+      name: WizardLightAttack_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1371
-        width: 147
-        height: 204
+        x: 822
+        y: 482
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92f36541ed15cc644a066ae79d9fe426
+      spriteID: bd43ccef6a1a68141ac4e69b3a75dcee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_21
+      name: WizardLightAttack_21
       rect:
         serializedVersion: 2
         x: 0
-        y: 1167
-        width: 147
-        height: 204
+        y: 301
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a94ca0f0f745fc43b6810f68b2d6696
+      spriteID: 18b62a7e480807c4893f8ca91c75e935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_22
+      name: WizardLightAttack_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 963
-        width: 147
-        height: 204
+        x: 137
+        y: 301
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb3c2d0cc23d20f4987df8d88ccbc5d8
+      spriteID: eece17e05d7c90a4e9b27b884ec81741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_23
+      name: WizardLightAttack_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 759
-        width: 147
-        height: 204
+        x: 274
+        y: 301
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17adaf25339b36b41b14b2ceed61e601
+      spriteID: a95a5f02c1a61f1488cb4f3f83e416fd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_24
+      name: WizardLightAttack_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 555
-        width: 147
-        height: 204
+        x: 411
+        y: 301
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfdaff0ba54b8a04d96f6dc964f57066
+      spriteID: 86e7374584c63ef4dbe50fa4ab23bac7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_25
+      name: WizardLightAttack_25
       rect:
         serializedVersion: 2
-        x: 0
-        y: 351
-        width: 147
-        height: 204
+        x: 548
+        y: 301
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb200ee13943bb04288ec764ea144bfa
+      spriteID: 51ac14801a182c84a9eb49155ed5f237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SS_WizardGurlLightAttack_26
+      name: WizardLightAttack_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 147
-        width: 147
-        height: 204
+        x: 685
+        y: 301
+        width: 137
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5266d0a11c1b4704abcf71b385e3ff2e
+      spriteID: 7d15536364969c6489f10f386e26788c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardLightAttack_27
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 301
+        width: 137
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9c8ca639be381429d1c3b968b4fefa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardLightAttack_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 137
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b968685e23bc1e4d8778a8496e38225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardLightAttack_29
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 120
+        width: 137
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d7f1d9d1ec47c4e8037d1fc5cd6b25
       vertices: []
       indices: 
       edges: []
@@ -692,7 +746,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d1d3e46f9fca9294197c2780c207d494
+    spriteID: ebea35c357218ba44b9c36b83e81a9e1
     vertices: []
     indices: 
     edges: []
